@@ -29,3 +29,4 @@ module.exports = {
     logging: false
   }
 }
+console.log("DB_DIALECT =", process.env.DB_DIALECT);
