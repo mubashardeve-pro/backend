@@ -10,7 +10,7 @@ app.use(cors({
   origin: process.env.CLIENT_URL,
   credentials: true,
 }));
-app.send("/",(req,res)=>{
+app.get("/",(req,res)=>{
   res.send("Home Page")
 })
 
