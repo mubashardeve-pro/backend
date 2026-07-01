@@ -10,6 +10,9 @@ app.use(cors({
   origin: process.env.CLIENT_URL,
   credentials: true,
 }));
+app.send("/",(req,res)=>{
+  res.send("Home Page")
+})
 
 app.use(express.json({ limit: "15mb" }));
 app.use(cookieParser());
